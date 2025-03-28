@@ -4,5 +4,7 @@ on:
   push
 
 jobs:
-  build:
+  call_maven_ci:
     uses: ocanema-corp/workflows/.github/workflows/maven-ci.yml@main
+    secrets: inherit
+  
