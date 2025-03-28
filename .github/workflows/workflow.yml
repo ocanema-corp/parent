@@ -1,5 +1,5 @@
 name: "Maven ci"
-
+run-name: Build application
 on:
   push
 
@@ -33,7 +33,7 @@ jobs:
             "name":"ocanema-libs-snapshots",
             "url":"https://sorint.jfrog.io/artifactory/ocanema-libs-snapshot",
             "snapshots":{"enabled":true}
-          }]'
+          }]
         settings-pluginRepositories: |
           [{
             "id":"central",
